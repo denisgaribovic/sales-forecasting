@@ -1,4 +1,4 @@
-
+![alt text](https://github.com/denisgaribovic/sales-forecasting/blob/main/Banner.jpeg)
 
 This project builds a production-ready forecasting pipeline to predict **daily retail sales** using [Meta Prophet](https://facebook.github.io/prophet/). It combines historical sales with contextual data such as oil prices, holidays, transactions, and store metadata to improve forecast accuracy and business relevance.
 
