@@ -81,4 +81,8 @@ This project uses data from the [Kaggle Store Sales - Time Series Forecasting co
 - Modular codebase allows easy extension to new stores or products  
 - Ready for scheduling with Airflow, Prefect, or similar orchestration tools  
 - Suitable for containerization and cloud deployment (e.g., AWS Lambda, Azure Functions)  
-- Can be integrated with BI tools like Power BI or Looker for interactive dashboards  
+- Can be integrated with BI tools like Power BI or Looker for interactive dashboards
+
+---
+
+*Built and maintained by [Denis Garibovic](https://www.linkedin.com/in/denisgaribovic).*
