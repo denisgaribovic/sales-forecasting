@@ -85,4 +85,4 @@ This project uses data from the [Kaggle Store Sales - Time Series Forecasting co
 
 ---
 
-*Built and maintained by [Denis Garibovic](https://www.linkedin.com/in/denisgaribovic).*
+*Built and maintained by [Denis Garibovic](https://www.linkedin.com/in/denis-garibovic/).*
