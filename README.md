@@ -58,8 +58,4 @@ The forecasting pipeline is modular, interpretable, and scalable. The main steps
 
 - Calculates MAE and RMSE on the forecast horizon  
 - Visualizes actual vs. predicted sales  
-- Offers weekly and monthly aggregation views for stakeholder-friendly reporting 
-
----
-
-*Built and maintained by [Denis Garibovic](https://www.linkedin.com/in/denis-garibovic/).*
+- Offers weekly and monthly aggregation views for stakeholder-friendly reporting
