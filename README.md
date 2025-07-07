@@ -1,9 +1,8 @@
 ![alt text](https://github.com/denisgaribovic/sales-forecasting/blob/main/Banner.png)
 
-# 🛍️ Retail Sales Forecasting with Prophet
+# 📈 Sales Forecasting
 
-A **data-driven sales forecasting pipeline** designed for retail leaders to optimize **inventory, promotions, and staffing**.  
-This project uses [Meta Prophet](https://facebook.github.io/prophet/) and combines internal sales data with external signals like oil prices, holidays, and transactions to deliver **interpretable, accurate, and scalable daily forecasts** — ready for deployment across retail networks.
+A **data-driven sales forecasting pipeline** designed for retail leaders to optimize **inventory, promotions, and staffing**. This project uses [Meta Prophet](https://facebook.github.io/prophet/) and combines internal sales data with external signals like oil prices, holidays, and transactions to deliver **interpretable, accurate, and scalable daily forecasts** — ready for deployment across retail networks.
 
 ---
 
