@@ -58,30 +58,7 @@ The forecasting pipeline is modular, interpretable, and scalable. The main steps
 
 - Calculates MAE and RMSE on the forecast horizon  
 - Visualizes actual vs. predicted sales  
-- Offers weekly and monthly aggregation views for stakeholder-friendly reporting  
-
----
-
-## 📊 Dataset Overview
-
-This project uses data from the [Kaggle Store Sales - Time Series Forecasting competition](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data):
-
-| Dataset              | Description                                      |
-|----------------------|------------------------------------------------|
-| `train.csv`          | Daily sales per store/product family            |
-| `stores.csv`         | Store metadata: location, cluster, store type   |
-| `oil.csv`            | Daily Ecuadorian oil prices                      |
-| `holidays_events.csv`| National and local holidays and events          |
-| `transactions.csv`   | Daily transaction counts per store               |
-
----
-
-## 🚀 Scalability & Deployment Readiness
-
-- Modular codebase allows easy extension to new stores or products  
-- Ready for scheduling with Airflow, Prefect, or similar orchestration tools  
-- Suitable for containerization and cloud deployment (e.g., AWS Lambda, Azure Functions)  
-- Can be integrated with BI tools like Power BI or Looker for interactive dashboards
+- Offers weekly and monthly aggregation views for stakeholder-friendly reporting 
 
 ---
 
