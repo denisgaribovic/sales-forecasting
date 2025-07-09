@@ -29,6 +29,12 @@ This project enables retail teams to:
 
 ---
 
+## 🧪 Full Analysis & Results
+
+All diagrams, model performance metrics, and pipeline visuals are available in the [Jupyter Notebook](https://github.com/denisgaribovic/sales-forecasting/blob/main/Sales%20Forecasting.ipynb).
+
+---
+
 ## ✅ Real-World Applications
 
 This forecasting pipeline can be used or extended for:
