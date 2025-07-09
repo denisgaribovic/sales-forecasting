@@ -2,59 +2,95 @@
 
 # 📈 Sales Forecasting
 
-A **data-driven sales forecasting pipeline** designed for retail leaders to optimize **inventory, promotions, and staffing**. This project uses [Meta Prophet](https://facebook.github.io/prophet/) and combines internal sales data with external signals like oil prices, holidays, and transactions to deliver **interpretable, accurate, and scalable daily forecasts** — ready for deployment across retail networks.
+A production-ready time series forecasting pipeline built with [Meta Prophet](https://facebook.github.io/prophet/), designed to help retailers **optimize inventory, staffing, and promotional strategies**. This project demonstrates how daily sales can be forecasted using a mix of **historical transactions**, **external economic signals**, and **seasonal effects** — all in a modular, interpretable, and scalable workflow.
 
 ---
 
 ## ✨ Highlights
 
-- 📆 Forecasts daily sales across 54 stores and multiple product families  
-- 🌍 Incorporates oil prices, holidays, and transactions as external regressors  
-- ⚙️ Modular pipeline built in Python using Prophet  
-- 📊 Visual reports and KPIs (MAE, RMSE) for stakeholder-friendly evaluation  
-- 🧩 Easily adaptable to other time series forecasting scenarios  
+- 📆 Forecasted daily sales across 54 stores and multiple product families  
+- 🌍 Integrated oil prices, national holidays, and store-level transactions as external regressors  
+- ⚙️ Built a reusable forecasting pipeline using Prophet in Python  
+- 📊 Evaluated accuracy using MAE and RMSE for business-ready insights  
+- 🧩 Easily extendable to other retail or time series forecasting use cases  
 
 ---
 
 ## 🎯 Business Context
 
-In fast-moving retail environments, poor forecasting leads to **stockouts, waste, missed promotions, and unhappy customers**.  
+In fast-paced retail environments, poor sales forecasting leads to **stockouts**, **excess inventory**, and **inefficient staffing** — all of which hurt both revenue and customer satisfaction.  
 
-This project empowers **retail planners, marketing teams, and supply chain leads** to:  
-- Anticipate local sales surges and seasonality  
-- Plan staffing and procurement more effectively  
-- Respond to external factors such as holidays and oil price fluctuations  
+This project enables retail teams to:
+
+- 🛍️ Plan promotions and product availability more precisely  
+- 🧾 Align staffing and procurement with expected sales demand  
+- 📉 Respond to external signals like oil price trends and holiday seasonality  
+- 📦 Improve supply chain and warehouse utilization  
+
+---
+
+## 🔐 Real-World Applications
+
+This forecasting pipeline can be used or extended for:
+
+- 🧮 Daily or weekly demand planning across locations  
+- 🗓️ Promotion-aware forecasting for marketing campaigns  
+- 🧠 Scenario modeling with dynamic holiday or economic inputs  
+- 📊 Dashboard integrations for inventory and operations teams  
+
+---
+
+## 📚 Dataset Overview
+
+The dataset originates from the [Kaggle Store Sales Time Series Forecasting competition](https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data), featuring:
+
+| Dataset | Description | Key Columns |
+|---------|-------------|-------------|
+| `train.csv` | Daily sales per store and product family | `date`, `store_nbr`, `family`, `sales` |
+| `transactions.csv` | Store-level daily transaction counts | `date`, `store_nbr`, `transactions` |
+| `oil.csv` | Daily oil price (economic signal) | `date`, `dcoilwtico` |
+| `holidays_events.csv` | National and local holidays/events | `date`, `type`, `locale`, `locale_name` |
+| `stores.csv` | Store metadata | `store_nbr`, `city`, `state`, `type`, `cluster` |
 
 ---
 
 ## 🛠️ Project Workflow
 
-The forecasting pipeline is modular, interpretable, and scalable. The main steps include:
-
 ### 1. 📥 Data Integration & Cleaning
 
-- Merges sales data with external sources: oil prices, holidays, transactions, and store metadata  
-- Handles missing values with forward-filling and sensible defaults  
-- Ensures no data leakage or unintended row multiplication during joins  
+- Merged multi-source data (sales, oil, holidays, transactions, store metadata)  
+- Handled missing values via forward fill and domain-aware imputation  
+- Ensured join integrity and avoided data leakage  
 
 ### 2. 🔍 Exploratory Data Analysis
 
-- Visualizes long-term trends, weekly seasonality, and holiday effects  
-- Decomposes the time series into trend, seasonal, and residual components  
-- Validates data quality and informs modeling choices  
+- Explored long-term sales trends, seasonal patterns, and anomalies  
+- Analyzed holiday impacts and weekly seasonality  
+- Validated data consistency across sources  
 
 ### 3. 🤖 Forecasting with Prophet
 
-- Forecasts daily sales with Prophet, including optional external regressors:  
+- Modeled daily sales using Prophet with the following regressors:  
   - 🛍️ Promotions  
   - 🛒 Transactions  
   - 🛢️ Oil prices  
-  - 📅 Holiday indicators  
-- Provides a flexible function to forecast for any store/product combination  
-- Automatically splits data into training and testing sets based on a cutoff date  
+  - 📅 Holidays  
+- Enabled flexible forecasting by store and product family  
+- Split data into training and testing based on a time-based cutoff  
 
 ### 4. 📈 Model Evaluation
 
-- Calculates MAE and RMSE on the forecast horizon  
-- Visualizes actual vs. predicted sales  
-- Offers weekly and monthly aggregation views for stakeholder-friendly reporting
+- Evaluated predictions using:  
+  - 📉 Mean Absolute Error (MAE)  
+  - 📊 Root Mean Squared Error (RMSE)  
+- Visualized actual vs. forecasted sales  
+- Aggregated performance metrics at weekly/monthly levels for stakeholder clarity  
+
+---
+
+## 💡 Key Takeaways
+
+- 🔮 Incorporating external regressors like holidays and oil prices enhances forecast accuracy  
+- 🧱 Modular pipeline structure allows easy scaling to other stores or time series problems  
+- 📊 Clear visualizations help bridge the gap between technical insights and business decisions  
+- 🚀 Prophet is a powerful tool for real-world retail forecasting when combined with domain features  
